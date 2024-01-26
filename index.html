@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleje.css">
+  <script defer src="scriptprue.js"></script>
+  <title> Ausencia </title>
+</head>
+<body>
+  <div class="popinicio" id="popin">
+    <div class="popin">
+      <div class="barrapop">
+        <span class="titulopop">¿Qué pasa cuando no encuentras a alguien?</span>
+      </div>
+      <img src="busq.png">
+      <button onclick="cerrarpopin()"> Empezar </button>
+    </div>
+  </div>
+  <div class="popinstruct1" id="popinst1">
+    <div class="popinst1">
+      <h2 onclick="cerrarpopinst()">Haz clic en Ir.</h2>
+    </div>
+  </div>
+  <div id="reloj">
+    <div id="btnsreloj">
+    <audio id="audiobtns">
+      <source src="clbt.mp3" type="audio/mpeg">
+    </audio>
+    <button class="bot-reloj" onclick="ajustarHora(true)">↑</button>
+    <span id="hora">16:00</span>
+    <button class="bot-reloj" onclick="ajustarHora(false)">↓</button>
+    <audio id="audioir">
+      <source src="clir.wav" type="audio/wav">
+    </audio>
+    <button class="botir" onclick="cambiarContenidoVentanas()">Ir</button>
+    </div>
+  </div>
+  <div id="ventana-1" class="ventana">
+    <div class="barra-titulo">
+      <span class="titulo-ventana">Mamá</span>
+      <div class="botones">
+        <button class="boton-cerrar">X</button>
+        <button class="boton-minimizar">-</button>
+        <button class="boton-maximizar">□</button>
+      </div>
+    </div>
+    <div id="contenido-16">
+      <!-- Contenido primera ventana 16 -->
+      <h2> Aquí está la historia de la mamá 16</h2>
+    </div>
+    <div id="contenido-17">
+      <h2>Historia mamá 17</h2>
+    </div>
+    <div id="contenido-18">
+      <h2>Historia mamá 18</h2>
+    </div>
+    <div id="contenido-19">
+      <h2>Historia mamá 19</h2>
+    </div>
+    <div id="contenido-20">
+      <h2>Historia mamá 20</h2>
+    </div>
+    <div id="contenido-21">
+      <h2>Historia mamá 21</h2>
+    </div>
+    <div id="contenido-22">
+      <h2>Historia mamá 22</h2>
+    </div>
+    <div id="contenido-23">
+      <h2>Historia mamá 23</h2>
+    </div>
+    <div id="contenido-24">
+      <h2>Historia mamá 00</h2>
+    </div>
+    <div id="contenido-1">
+      <h2>Historia mamá 01</h2>
+    </div>
+    <div id="contenido-2">
+      <h2>Historia mamá 02</h2>
+    </div>
+    <div id="contenido-3">
+      <h2>Historia mamá 03</h2>
+    </div>
+    <div id="contenido-4">
+      <h2>Historia mamá 04</h2>
+    </div>
+    <div id="contenido-5">
+      <h2>Historia mamá 05</h2>
+    </div>
+    <div id="contenido-6">
+      <h2>Historia mamá 06</h2>
+    </div>
+    <div id="contenido-7">
+      <h2>Historia mamá 07</h2>
+    </div>
+  </div>
+  <div id="ventana-2" class="ventana">
+    <div class="barra-titulo">
+      <span class="titulo-ventana">Amanda</span>
+      <div class="botones">
+        <button class="boton-cerrar">X</button>
+        <button class="boton-minimizar">-</button>
+        <button class="boton-maximizar">□</button>
+      </div>
+    </div>
+    <div class="contenido" id="contenido-16b">
+      <!-- Contenido para la segunda ventana -->
+      <h2> Aquí está la persona desaparecida</h2>
+    </div>
+    <div class="contenido" id="contenido-17b">
+      <h2>Historia desaparecida 17</h2>
+    </div>
+  </div>
+  <div id="ventana-3" class="ventana">
+    <div class="barra-titulo">
+      <span class="titulo-ventana">Amigo</span>
+      <div class="botones">
+        <button class="boton-cerrar">X</button>
+        <button class="boton-minimizar">-</button>
+        <button class="boton-maximizar">□</button>
+      </div>
+    </div>
+    <div id="contenido-16c">
+      <!-- Contenido para la tercera ventana -->
+      <h2>Historia amigo 16</h2>
+    </div>
+    <div id="contenido-17c">
+      <h2>Historia amigo 17</h2>
+    </div>
+  </div>
+</body>
+</html>
