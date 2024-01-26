@@ -25,7 +25,7 @@ img {
 /* pop inicio */
 .popinicio {
   background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
+  position: absolute;
   top: 10%;
   left: 25%;
   width: 100%;
