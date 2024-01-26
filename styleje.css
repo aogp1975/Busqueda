@@ -1,0 +1,263 @@
+@font-face {
+  font-family: digital;
+  src: url(digital.ttf);
+}
+@keyframes parpadeo {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color:black;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+img {
+  width: 600px;
+  align-items: center;
+}
+
+/* pop inicio */
+.popinicio {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  height: 100vh;
+}
+.popinstruct1 {
+  position: fixed;
+  top: 15%;
+  left: 15%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 998;
+  height: 100vh;
+}
+.popin{
+  position: fixed;
+  background-color: white;
+  padding: 0.3%;
+  text-align: center;
+  max-width: 80%;
+}
+.popinst1 {
+  position: fixed;
+  height: 5%;
+  text-align: center;
+  max-width: 80%;
+}
+.popinst1 h2 {
+  background-color: #c4c4c4;
+  border: black;
+  color: black;
+  padding: auto;
+  cursor: pointer;
+  font-size: 100%;
+  animation: parpadeo 0.5s infinite;
+}
+.popin img {
+  max-width: 100%;
+  height: auto;
+}
+.popin button {
+  position:absolute;
+  bottom: 10px;
+  left: 50%;
+  outline: none;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: #ccc;
+  font-size: 3vw;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
+}
+.popin button:hover {background-color: #5b5bd9}
+
+.popin button:active {
+  background-color: #5c5c5c;
+  box-shadow: 0 5px #3b3b3b;
+  transform: translate(-50%, -50%);
+}
+.barrapop {
+  background-color: #c4c4c4;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulopop {
+  font-size: 14px;
+  color: #3b3b3b;
+  font-weight: bold;
+}
+
+
+#reloj {  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+#hora {
+    background-color: #3b3b3b;
+    color:#5AFA48;
+    font-family: digital;
+    font-size: 95px;
+    letter-spacing: 5px;
+    border: 15px ridge #5b5bd9;
+    border-radius: 15px;
+}
+#btnsreloj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 1.2em;
+  margin: 0 10px;
+}
+
+.bot-reloj {
+  font-size: 2vw;
+  border-radius: 50%;
+  width: 10%;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color:#ccc;
+  border: none;
+  border-radius: 40%;
+  box-shadow: 0 9px #999;
+}
+.bot-reloj:hover {background-color: #5b5bd9}
+
+.bot-reloj:active {
+  background-color: #5c5c5c;
+  box-shadow: 0 5px #3b3b3b;
+  transform: translateY(4px);
+}
+
+.botir{
+  font-size: 30px;
+  border-radius: 50%;
+  width: 40px;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color:#ccc;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999; 
+}
+.botir:hover {background-color: #5b5bd9}
+
+.botir:active {
+  background-color: #5c5c5c;
+  box-shadow: 0 5px #3b3b3b;
+  transform: translateY(4px);
+}
+
+h2{
+    color:#ccc;
+}
+.contenido {
+ padding: 10px;
+ display: flex;
+ align-items: center;
+}
+.ventana {
+  display: none;
+  position: absolute;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.barra-titulo {
+  background-color: #c4c4c4;
+  padding: 0.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo-ventana {
+  font-size: 1vw;
+  color: #3b3b3b;
+  font-weight: bold;
+}
+
+
+.botones button {
+  background: none;
+  border: none;
+  font-size: 1vw;
+  margin-left: 1vw;
+}
+/* mamá */
+#ventana-1 {
+        position: absolute;
+        overflow: auto;
+        top: 30%; 
+        left: 50%;
+        width: 49%;
+        height: 80%;
+        border: 3px outset #c4c4c4;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+#ventana-2 {
+    position: absolute;
+    overflow: auto;
+    top: 30%; 
+    left: 0%; 
+    width: 49%;
+    height: 162%;
+    border: 3px outset #c4c4c4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  #ventana-3 {
+    position: absolute;
+    top: 112%;
+    left: 50%; 
+    width: 49%;
+    height: 80%;
+    border: 3px outset #c4c4c4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+.boton-cerrar,
+.boton-minimizar,
+.boton-maximizar {
+  color: #3b3b3b;
+  font-weight: 900;
+}
+
+/* contenidos horas estilos */
+.telef
+{
+  width: 150%;
+  top: 1%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
