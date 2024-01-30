@@ -61,19 +61,19 @@ function cambiarContenidoVentanas() {
   document.getElementById('contenido-17c').innerHTML = '';
 
   if (horaActual == 16) {
-    document.getElementById('contenido-16').innerHTML = '<h2> mamá 16 </h2>';
-    document.getElementById('contenido-16b').innerHTML = '<h2> -Ya casi, sí vamos a terminar temprano el proyecto.- Llevábamos todo el día trabajando y ya nos queríamos ir, yo tenía que llegar antes de las 6 a casa y me tardo al menos una hora entre los camiones que tengo que tomar, habíamos dejado todo para el último momento porque según nosotros el proyecto era rápido y podíamos mejor convivir entre nosotros. </h2>';
-    document.getElementById('contenido-16c').innerHTML = '<h2> amigo 16 </h2>';
+    document.getElementById('contenido-16').innerHTML = '<h2> <img class=imgmam src="mam16.jpg">  </h2>';
+    document.getElementById('contenido-16b').innerHTML = '<h2 id = "textoescrito"> -Ya casi, sí vamos a terminar temprano el proyecto.- <br> Llevábamos todo el día trabajando y ya nos queríamos ir. <br> Yo tenía que llegar antes de las 6 a casa y me tardo al menos una hora entre los camiones que tengo que tomar. <br> Habíamos dejado todo para el último momento porque, según nosotros, el proyecto era rápido y podíamos aprovechar mejor el tiempo para convivir entre nosotros. </h2>';
+    document.getElementById('contenido-16c').innerHTML = '<h2> -Yo les dije que lo hiciéramos desde la semana pasada- <br> Yo no tenía prisa por acabar el proyecto, pero mis amigas sí, siempre hacíamos los trabajos entre nosotros y siempre dejábamos todo para el final. </h2>';
   }
   else if (horaActual == 17) {
     document.getElementById('contenido-17').innerHTML = '<h2> mamá 17 </h2>';
-    document.getElementById('contenido-17b').innerHTML = '<h2> desaparecida 17 </h2>';
+    document.getElementById('contenido-17b').innerHTML = '<h2>  Nos habíamos tardado más de lo que planeamos, pero no había problema porque ya me había hablado mi mamá diciendo que mejor me regresara en taxi para que estuviera más tranquila y poder llegar a una salida que teníamos planeada, que ella lo pagaba al llegar. <br> Luna me había ofrecido quedarme en su casa pero quería llegar con mi gato porque no lo había visto en todo el día y luego se pone ansioso. </h2>';
     document.getElementById('contenido-17c').innerHTML = '<h2> amigo 17 </h2>';
   }
   else if (horaActual == 18) {
     document.getElementById('contenido-17').innerHTML = '<h2> mamá 18 </h2>';
     document.getElementById('contenido-17b').innerHTML = '<h2> desaparecida 18 </h2>';
-    document.getElementById('contenido-17c').innerHTML = '<h2> amigo 18 </h2>';
+    document.getElementById('contenido-17c').innerHTML = '<h2> <img src="taxi.png"> </h2>';
   }
   else if (horaActual == 19) {
     document.getElementById('contenido-17').innerHTML = '<h2> mamá 19 </h2>';
@@ -82,16 +82,16 @@ function cambiarContenidoVentanas() {
   }
   else if (horaActual == 20) {
     document.getElementById('contenido-17').innerHTML = '<h2> mamá 20</h2>';
-    document.getElementById('contenido-17b').innerHTML = '<h2> <img class=telef src= "telef.gif"> </h2>';
+    document.getElementById('contenido-17b').innerHTML = '<h2>. </h2>';
     document.getElementById('contenido-17c').innerHTML = '<h2> amigo 20 </h2>';
   }
   else if (horaActual == 21) {
     document.getElementById('contenido-17').innerHTML = '<h2> mamá 21 </h2>';
     document.getElementById('contenido-17b').innerHTML = '<h2> desaparecida 21 </h2>';
-    document.getElementById('contenido-17c').innerHTML = '<h2> amigo 21 </h2>';
+    document.getElementById('contenido-17c').innerHTML = '<h2> <img src= "velarias.jpg"> </h2>';
   }
   else if (horaActual == 22) {
-    document.getElementById('contenido-17').innerHTML = '<h2> mamá 22 </h2>';
+    document.getElementById('contenido-17').innerHTML = '<h2> Seguía marcándole a mi hija con la esperanza de que le entrara la llamada, ya íbamos camino a denunciar su desaparición para poder empezar a buscarla. <br> Solo me mandaba a buzón después de unos cuantos tonos. </h2>';
     document.getElementById('contenido-17b').innerHTML = '<h2> <img class=telef src= "telef.gif"> </h2>';
     document.getElementById('contenido-17c').innerHTML = '<h2> amigo 22 </h2>';
   }
@@ -131,12 +131,12 @@ function cambiarContenidoVentanas() {
     document.getElementById('contenido-17c').innerHTML = '<h2> amigo 5 </h2>';
   }
   else if (horaActual == 6) {
-    document.getElementById('contenido-17').innerHTML = '<h2> mamá 6 </h2>';
+    document.getElementById('contenido-17').innerHTML = '<h2> ¡- Pero tenemos que ir a la policía! - Le grité a Amanda, aunque sabía que estaba muy mal, no pude evitar sentir alivio de que por fin estuviera en casa. <br> -No mamá, no quiero hablar de nada. - Me dijo llorando, nos iba a costar mucho trabajo pero no la iba a dejar sola. <br> Estaba aquí e íbamos a estar bien. </h2>';
     document.getElementById('contenido-17b').innerHTML = '<h2> desaparecida 6 </h2>';
     document.getElementById('contenido-17c').innerHTML = '<h2> amigo 6 </h2>';
   }
   else if (horaActual == 7) {
-    document.getElementById('contenido-17').innerHTML = '<h2> mamá 7 </h2>';
+    document.getElementById('contenido-17').innerHTML = '<h2> <img src= "mam7.jpg"> </h2>';
     document.getElementById('contenido-17b').innerHTML = '<h2> desaparecida 7 </h2>';
     document.getElementById('contenido-17c').innerHTML = '<h2> amigo 7 </h2>';
   }
@@ -168,6 +168,12 @@ function cerrarpopin() {
 function cerrarpopinst() {
   const sonpop = document.getElementById("audiobtns");
   var popin = document.getElementById('popinst1');
+  popin.style.display = 'none';
+  sonpop.play();
+}
+function cerrarpopinst2() {
+  const sonpop = document.getElementById("audiobtns");
+  var popin = document.getElementById('popinst2');
   popin.style.display = 'none';
   sonpop.play();
 }
