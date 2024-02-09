@@ -30,11 +30,74 @@ img {
   align-items: center;
   z-index: 999;
   height: 100vh;
+  width: auto;
+}
+.popfinal1 {
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: blue;
+  border: 2px solid white;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  width: 60%;
+}
+.popfinal1 h2{
+  padding: auto;
+  text-align: center;
+  color: white;
+  font-size: 200%;
+}
+.popfinal1 button {
+  display:block;
+  margin: auto;
+  background-color: #c4c4c4;
+  color:#3b3b3b;
+  border: none;
+  cursor: pointer;
+}
+.popfinal1 button:hover {
+  background-color: #5b5bd9;
+}
+.popfinal2 {
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: blue;
+  border: 2px solid white;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  width: 60%;
+}
+.popfinal2 h2{
+  padding: auto;
+  text-align: center;
+  color: white;
+  font-size: 200%;
+}
+.popfinal2 button {
+  display:block;
+  margin: auto;
+  background-color: #c4c4c4;
+  color:#3b3b3b;
+  border: none;
+  cursor: pointer;
+}
+.popfinal2 button:hover {
+  background-color: #5b5bd9;
+}
+.imgpop {
+  width: 100vh;
+  height: auto;
 }
 .popinstruct1 {
   position: fixed;
   top: 15%;
-  left: 68%;
+  left: 60%;
   width: 100%;
   height: 100%;
   display: flex;
@@ -281,5 +344,14 @@ h2{
   width: 150%;
   top: 1%;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
+}
+.glitch {
+  top: 0;
+  width: 100vw;
+  height: 300vh;
+  object-fit: fill;
+}
+#img17a {
+  cursor:pointer;
 }
